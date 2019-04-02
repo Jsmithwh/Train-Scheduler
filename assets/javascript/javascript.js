@@ -8,7 +8,7 @@ var config = {
   };
   firebase.initializeApp(config);
 
-  //borrowed from exercise 17
+  //borrowed from exercise 17- edited and moved things around a bit
 
   var database = firebase.database();
 
@@ -19,19 +19,19 @@ $("#add-train-btn").on("click", function(event) {
   // Grabs user input
   var empTrain = $("#train-name-input").val().trim();
   var empDest = $("#destination-input").val().trim();
-  var empTime = moment($("#train-time").val().trim(), "MM/DD/YYYY");
+//   var empTime = moment($("#train-time").val().trim(), "HH:mm");
 //   console.log('Train Name', emptrain);
-  var empfreq = $("#freq-input").val().trim();
+  var empFreq = $("#freq-input").val().trim();
 
   // Creates local "temporary" object for holding employee data
   var newEmp = {
     name: empTrain,
     dest: empDest,
-    time: empTime,
+    // time: empTime,
     freq: empFreq
   };
 
-  // Uploads employee data to the database
+  // Uploads train data to the database
   database.ref().push(newEmp);
 
   // Logs everything to console
