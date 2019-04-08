@@ -40,7 +40,7 @@ $("#add-train-btn").on("click", function(event) {
   console.log(newEmp.time);
   console.log(newEmp.freq);
 
-  alert("Here's your train, dude!");
+//   alert("Here's your train, dude!");
 
   // Clears all of the text-boxes
   $("#train-name-input").val("");
@@ -76,3 +76,9 @@ database.ref().on("child_added", function(childSnapshot) {
   // Append the new row to the table
   $("#train-table > tbody").append(newRow);
 });
+
+
+//MAKE TIME THING
+//MAKE README
+//LINK THROUGH PORTFOLIO
+//EXERCISE 20 & 21
