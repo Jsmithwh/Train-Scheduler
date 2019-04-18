@@ -78,7 +78,9 @@ database.ref().on("child_added", function(childSnapshot) {
 });
 
 
-//MAKE TIME THING
-//MAKE README
-//LINK THROUGH PORTFOLIO
-//EXERCISE 20 & 21
+//MAKE TIME 
+//Push back one year
+//Difference between times
+//Time remainder
+//Convert time to military time
+//Append to table
